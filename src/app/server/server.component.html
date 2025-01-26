@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="div">
+        <div class="div">
+<button (click) = "onButtonClick()">Display Details</button>
+<p *ngIf="showParagraph">Secret password = tuna</p>
+<p *ngFor="let x of click; let i = index"
+[ngClass]="{fifth: i+1 >= 5 }"
+>{{ x }}</p>
+        </div>
+    </div>
+</div>
